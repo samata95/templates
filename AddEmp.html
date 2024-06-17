@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Employee Information</title>
+</head>
+<body bgcolor="lightgrey">
+<center>
+<font color="black" size="4" style="font-family: avenir">
+<h1 style="color: DodgerBlue">Employee Database</h1>
+<form action="http://0.0.0.0:80/addemp" autocomplete="on" method="POST" enctype="multipart/form-data">
+  Employee ID:
+  <input style="height: 25px; font-size: 14pt; color: grey;" type="number" name="emp_id" autofocus size="40"><br>
+  First Name:
+  <input style="height: 25px; font-size: 14pt; color: grey;" type="text" name="first_name"><br>
+  Last Name:
+  <input style="height: 25px; font-size: 14pt; color: grey;" type="text" name="last_name"><br>
+  Primary Skills:
+  <input style="height: 25px; font-size: 14pt; color: grey;" type="text" name="pri_skill"><br>
+  Location:
+  <input style="height: 25px; font-size: 14pt; color: grey;" type="text" name="location"><br>
+  Image:
+  <input type="file" name="emp_image_file" style="height: 25px; font-size: 14pt; color: grey;"><br><br>
+  <button type="submit" style="background: grey; height: 45px; width: 200px; color: white; font-style: oblique;">UPDATE DATABASE</button><br><br>
+  <button type="submit" formaction="http://0.0.0.0:80/getemp" style="background: grey; height: 45px; width: 200px; color: white; font-style: oblique;">GET EMPLOYEE INFORMATION</button><br><br>
+  <button type="submit" formaction="http://0.0.0.0:80/" style="background: grey; height: 45px; width: 200px; color: white; font-style: oblique;">ABOUT US</button>
+</form>
+</font>
+</center>
+</body>
+</html>
